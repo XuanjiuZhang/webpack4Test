@@ -9,14 +9,6 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /(\.js)|(\.ts)|(\.jsx)|(\.tsx)$/,
-        loader: 'eslint-loader',
-        enforce: 'pre',
-        options: {
-          formatter: require('eslint-friendly-formatter')
-        }
-      },
-      {
         test: /(\.js)|(\.jsx)$/,
         exclude: /node_modules/,
         loader: 'babel-loader',
